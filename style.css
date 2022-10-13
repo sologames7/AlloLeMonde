@@ -37,12 +37,18 @@
 }
 
 /* all content */
-.allContent{
+
+.twoSectionsContent{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(./img/Tracé\ 5636.png);
+    background-position: top;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    background-size: calc(cover - 30%);
 }
 /* SECTION KEY NUMBERS */
 .keyNumbers{
@@ -50,6 +56,7 @@
     width: 80vw;
     display: flex;
     flex-direction: column;
+    margin-bottom: 200px;
 }
 
 .threeContainer{
@@ -57,4 +64,181 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 25px;
+    max-height: 65vh;
+    height: 500px;
+    background-color: white;
+    
+}
+.unContainer{
+    max-width: 25vw;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+.percent{
+    color: #C4E6F2;
+    font-size: 99px;
+    font-weight: bold;
+}
+.textPercent{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 35px;
+    margin: 30px 60px;
+}
+
+
+
+.seeMore{
+    font-size: 20px ;
+    font-family: sans-serif;
+    color: #143642;
+    display: flex;
+    align-items: center;
+    width: calc(100% + 20px);
+    transition: 0.5s;
+    justify-content: center;
+    gap: 30px;
+}
+
+.seeMore:hover{
+    gap: 10px;
+}
+
+/* SOME ARTICLES */
+.someArticles{
+    margin-top: 100px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.threeArticles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.oneArticle{
+    background-color: blue;
+    max-width: 20vw;
+    height: 100%;
+    width: 400px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow: 0px 3px 6px #00000029;
+    background-image: url(./img/Image\ 8.png);
+
+}
+.titleAndButton{
+    background-color: white;
+    height: 40%;
+    padding: 50px;
+    border-radius: 28px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.read{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #143642;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: sans-serif;
+    color: #143642;
+    height: 41px;
+    transition: 0.2s;
+    width: 45%;
+}
+.read:hover{
+    background-color: #143642;
+    color: white;
+}
+
+/* TEMOIGNAGE */
+.wgContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./img/Tracé\ 5638.png);
+    background-position: top;
+    background-position-y:0;
+    background-position-x: -180px;
+    background-repeat: no-repeat;
+    background-size: calc(cover - 30%);
+    height: 1400px;
+}
+
+.weekGuest{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.testimony{
+    height: 1000px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000066;
+    border-radius: 30px;
+    display: flex;
+    padding: 65px;
+    gap: 45px;
+}
+.tTitle{
+    font-size: 35px;
+}
+.quoteTest{
+    margin-top: 40px;
+}
+#pTest{
+    font-size: 23px;
+    font-family: sans-serif;
+}
+
+#testButton{
+    margin-top: 50px;
+    font-size: 20px ;
+    font-family: sans-serif;
+    color: #143642;
+    width: calc(100% + 20px);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#testButton:hover{
+    gap:10px;
+}
+
+#footer{
+    width: 100%;
 }
