@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.slide{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+
+.wrapper{
+    display: flex;
+    width: 300vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    background-color:lightseagreen;
+}
+
+.paraContainer{
+    height: 100vw;
+    width: 100vh;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+}
+
+
+/* iframe{
+    top: 100vh;
+    position: absolute;
+} */
+
+
+
+.suite{
+    top: 100vh;
+    position: absolute;
+}
