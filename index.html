@@ -8,17 +8,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="paraContainer">
-        <div class="wrapper">
-            <div class="slide">
-                <div class="layer l1"></div>
-                <div class="layer l2"></div>
-                <div class="layer l3"></div>
+    <section class="tooMuch">
+        <div class="paraContainer">
+            <div class="wrapper">
+                <div class="slide" id="slide1">
+                    <div class="index containerHome">
+                        <img class="homeLogo" src="./img/Groupe 3685.png" alt="logo">
+                        <p class="homeText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+                    </div>
+                    <nav class="index">
+                        <a class="rond rose" id="rond1" href="#slide1">Concept</a>
+                        <a class="rond bleu" href="#slide2">Objectif</a>
+                        <a class="rond rouge" href="#slide3">Equipe</a>
+                    </nav>
+                    <div class="layer l5"></div>
+                    <div class="layer l6"></div>
+                    <div class="layer l7"></div>
+                </div>
+                <div class="slide" id="slide2">
+                    <div class="index containerHome">
+                        <img class="homeLogo" src="./img/Groupe 3685.png" alt="logo">
+                        <p class="homeText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+                    </div>
+                    <nav class="index">
+                        <a class="rond rose" href="#slide1">Concept</a>
+                        <a class="rond bleu" id="rond2" href="#slide2">Objectif</a>
+                        <a class="rond rouge" href="#slide3">Equipe</a>
+                    </nav>
+                    <div class="layer l8"></div>
+                    <div class="layer l9"></div>
+                    <div class="layer l10"></div>
+                </div>
+                <div class="slide" id="slide3">
+                    
+                    <div class="layer l1"></div>
+                    <div class="layer l2"></div>
+                    <div class="layer l3"></div>
+                    <div class="layer l4"></div>
+                    <div class="index containerHome">
+                        <img class="homeLogo" src="./img/Groupe 3685.png" alt="logo">
+                        <p class="homeText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+                    </div>
+                    <nav class="index">
+                        <a class="rond rose" href="#slide1">Concept</a>
+                        <a class="rond bleu" href="#slide2">Objectif</a>
+                        <a class="rond rouge"  id="rond3" href="#slide3">Equipe</a>
+                    </nav>
+                </div>
             </div>
-            <div class="slide"></div>
-            <div class="slide"></div>
         </div>
-    </div>
+    </section>
     <!-- REMPLIRE LE PARRALAX QUI EST EN POSITION ABSOLUTE -->
     <div class="fillTop"></div>
 
@@ -50,19 +89,19 @@
             <div class="threeArticles">
                 <div class="oneArticle">
                     <div class="titleAndButton">
-                        <h3>Titre de l'article</h3>
+                        <h3>La vie de votre voiture</h3>
                         <a class="read" href="">Lire</a>
                     </div>
                 </div>
                 <div class="oneArticle">
                     <div class="titleAndButton">
-                        <h3>Titre de l'article</h3>
+                        <h3>Les transports et la planète</h3>
                         <a  class="read" href="">Lire</a>
                     </div>
                 </div>
                 <div class="oneArticle">
                     <div class="titleAndButton">
-                        <h3>Titre de l'article</h3>
+                        <h3>L'essor de l'électique</h3>
                         <a class="read" href="">Lire</a>
                     </div>
                 </div>
@@ -91,6 +130,26 @@
         </section>
     </section>
     <img id="footer"src="./img/Groupe 3734.png" alt="footer">
+    <!-- <iframe title="Report Section" width="600" height="636" src="https://app.powerbi.com/view?r=eyJrIjoiNmRjNGU3YWMtZjhiOC00NWY1LTkxNzUtMzIwZmYyZDNiZjUyIiwidCI6IjkwMWNiNGNhLWI4NjItNDAyOS05MzA2LWU1Y2QwZjZkOWY4NiIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe> -->
     <!-- <script id="mon-impact-transport" src="https://monimpacttransport.fr/iframe.js" data-search="?theme=default"></script> -->
+    <script type="text/javascript">
+        let cont = document.querySelector('.paraContainer')
+        let layer = document.querySelectorAll('.layer')
+
+        cont.onscroll = function(){
+            let X = cont.scrollTop
+
+            layer[1].style.left = X/2 + 'px';
+            layer[2].style.left = X/3 + 'px';
+            layer[3].style.left = X/4 + 'px';
+
+            layer[7].style.right = X/2 + 'px';
+            layer[8].style.right = X/3 + 'px';
+            layer[9].style.right = X/4 + 'px';
+            layer[10].style.right = X/5 + 'px';
+
+
+        }
+    </script>
 </body>
 </html>

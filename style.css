@@ -6,9 +6,14 @@
 }
 
 .slide{
+    padding: 10vw;
     height: 100vh;
     width: 100vw;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 
 
@@ -18,7 +23,6 @@
     width: 300vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    background-color:lightseagreen;
 }
 
 .paraContainer{
@@ -29,11 +33,102 @@
     overflow-x: hidden;
     overflow-y: scroll;
     position: absolute;
+    scroll-behavior: smooth;
+    
+    
+}
+.paraContainer::-webkit-scrollbar {
+    display: none;
+}
+
+#specialBg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.l1, .l2, .l3, .l4{
+    background-position-y: 0px;
+}
+
+@keyframes upDownUp {
+    0% {
+      background-position-y: 0px;
+    }
+  
+    50% {
+      background-position-y: -20px;
+    }
+    100%{
+      background-position-y: 0px;
+    }
+  }
+  @keyframes upDownUp2 {
+    0% {
+      background-position-y: -20px;
+    }
+  
+    50% {
+      background-position-y: 0px;
+    }
+    100%{
+      background-position-y: -20px;
+    }
+  }
+
+.l1{
+    background-image: url('./img/illus_1/oiseaux.png');
+    animation: upDownUp 4s infinite
+}  
+.l2{
+    background-image: url('./img/illus_1/verdure.png');
+}
+.l3{
+    background-image: url('./img/illus_1/sol.png');
+}
+.l4{
+    background-image: url('./img/illus_1/banc.png');
+}
+.l5{
+    background-image: url('./img/illus2/arbre.png');
+}
+.l6{
+    background-image: url('./img/illus2/lamp.png');
+}
+.l7{
+    background-image: url('./img/illus2/sol.png');
+}
+.l8{
+    background-image: url('./img/illus_3/buisson.png');
+}
+.l9{
+    background-image: url('./img/illus_3/sol.png');
+}
+.l10{
+    background-image: url('./img/illus_3/arbre.png');
 }
 
 .fillTop{
     height: 100vh;
     width: 100vw;
+}
+.tooMuch{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./img/fond_city.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* all content */
@@ -133,7 +228,6 @@ h2{
 
 .oneArticle{
     background-color: blue;
-    max-width: 20vw;
     height: 100%;
     width: 400px;
     border-radius: 30px;
@@ -143,6 +237,13 @@ h2{
     background-image: url(./img/Image\ 8.png);
 
 }
+.oneArticle:nth-child(3){
+    background-image: url(./img/michael-fousert-O63S96_qn8c-unsplash.png);
+}
+.oneArticle:nth-child(1){
+    background-image: url(./img/marek-piwnicki-WiZOyYqzUss-unsplash.png);
+}
+
 .titleAndButton{
     background-color: white;
     height: 40%;
@@ -174,6 +275,7 @@ h3{
     height: 41px;
     transition: 0.2s;
     width: 45%;
+    margin-top: 10px;
 }
 .read:hover{
     background-color: #143642;
@@ -241,4 +343,80 @@ h3{
 
 #footer{
     width: 100%;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+nav a:hover{
+    border: white solid 5px;
+}
+
+nav{
+    height: 100px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 200px;
+}
+
+.rose{
+    background-color: #FFC4C0;
+}
+.rose:hover{
+    border: black solid 5px;
+}
+.bleu{
+    background-color: #143642;
+    color: white;
+}
+.rouge{
+    background-color: #FF4539;
+    color: white;
+}
+
+.index{
+    z-index: 1;
+}
+
+.containerHome{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 750px;
+    height: 500px;
+    border-radius: 60px;
+    padding: 50px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.homeText{
+    font-size: 30px;
+    font-family: sans-serif;
+    height: 150px;
+}
+.homeLogo{
+    width: 70%;
+}
+
+#rond1{
+    border: black solid 5px;
+}
+#rond2{
+    border: white solid 5px;
+}
+#rond3{
+    border: white solid 5px;
 }
